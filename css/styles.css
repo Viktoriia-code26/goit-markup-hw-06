@@ -80,7 +80,6 @@ button {
 }
 .page-header .container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 .heder-social, 
@@ -125,9 +124,12 @@ button {
     .burger-button{
         display: none;
     }
+.page-header .container {
+    align-items: center;
+}
 .heder-social {
     display: flex;
-    gap: 40px;
+    gap: 24px 0;
 }
 .heder-social a {
     color: #2e2f42;
@@ -143,7 +145,6 @@ button {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding: 16px auto;
 }
 .logo{
     margin-right: 120px;
@@ -178,14 +179,12 @@ a.link-studio {
     border-radius: 2px;
         }
 }
-
-
 @media screen and (min-width: 1158px) {
    
 .logo {
         margin-right: 76px;
     }
-.heder-social-list {
+.heder-social-ul {
     flex-direction: row;
     gap: 40px;
 }
@@ -201,8 +200,6 @@ a.link-studio {
     color: #404bbf;
 }
 }
-/*Modal mobil*/
-
 .mobil-modal {
     background: #fff;
     position: fixed;
@@ -210,6 +207,7 @@ a.link-studio {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 999;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -288,7 +286,6 @@ a.link-studio {
 
 .menu-modal-social-links {
     display: block;
-    margin-top: 168px;
     margin-bottom: 48px;
 }
 
@@ -300,6 +297,7 @@ a.link-studio {
 
 .menu-modal-social-links-list a {
     font-weight: 500;
+    font-style: normal;
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.02em;
@@ -366,6 +364,14 @@ a.link-studio {
     max-width: 767px;
     margin: 0 auto;
 }
+@media (min-resolution: 2x) {
+    .hero-title {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/mobile/img-hero-bg@2x.jpg);
+        }
+        }
 .hero-title-text {
     font-weight: 700;
     font-size: 36px;
@@ -398,15 +404,6 @@ a.link-studio {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (min-resolution: 196dpi) {
-    .hero-title {
-        background-image:linear-gradient(to bottom,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-                url(../images/mobile/img-hero-bg@2x.jpg);
-    }
-}
-/*tablet*/
 @media screen and (min-width: 768px) {
     .hero-title {
         max-width: 1157px;
@@ -423,7 +420,7 @@ a.link-studio {
         margin-bottom: 36px;
           }
 }
-@media (min-resolution: 196dpi) {
+@media (min-resolution: 2x) {
     .hero-title {
         max-width: 1157px;
         background-image:linear-gradient(to bottom,
@@ -432,7 +429,6 @@ a.link-studio {
                  url(../images/tab/img-hero-bg@2x.jpg);
     }
 }
-/*desktop*/
 @media screen and (min-width: 1158px) {
     .hero-title {
         max-width: 1440px;
@@ -451,7 +447,7 @@ a.link-studio {
             background-color: #404bbf;
         }
 }
-@media (min-resolution: 196dpi) {
+@media (min-resolution: 2x) {
     .hero-title {
         max-width: 1440px;
         background-image: linear-gradient(to bottom,
@@ -521,10 +517,7 @@ a.link-studio {
         }
     .future-card {
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
-    align-items: center;
-    justify-content: space-between;
+    gap: 72px 24px;
      
                   }
 .future-set {
@@ -601,6 +594,8 @@ padding: 98px 0;
 .team-ul {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 24px;
     
 }
@@ -876,8 +871,6 @@ padding: 98px 0;
 .footer-media-ul .icon {
     fill: #f4f4fd;
 }
-
-/*Subscribe footer*/
 .footer-form {
     display: flex;
     flex-direction: row;
@@ -935,7 +928,7 @@ padding: 98px 0;
 
 @media screen and (min-width: 768px) {
   .footer-wrap-part {
-        padding: 0 108px;
+        width: 584px;
         align-items: baseline;
         flex-direction: row;
         flex-wrap: wrap;
@@ -969,7 +962,7 @@ padding: 98px 0;
           flex-wrap: nowrap;
           margin: 0 auto;
           gap: 0px;
-          padding: 0;
+          width: 1158px;
         }
         .footer-logo-set {
         max-width: 264px;
