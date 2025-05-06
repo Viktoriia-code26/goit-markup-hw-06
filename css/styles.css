@@ -943,16 +943,13 @@ padding: 98px 0;
         justify-content: flex-start;
         align-items: center;
     }
-    .footer-text {
+    .footer-logo-set {
         max-width: 264px;
-        max-height: 72px;
     }
     .footer-form-text {
     text-align: start;
     }
-    .footer-form-input{
-        width: 264px;
-    }
+
 }
 @media screen and (min-width: 1158px) {
     .footer-wrap {
@@ -963,9 +960,6 @@ padding: 98px 0;
           margin: 0 auto;
           gap: 0px;
           width: 1158px;
-        }
-        .footer-logo-set {
-        max-width: 264px;
         }
        
         .footer-media{
