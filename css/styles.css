@@ -120,7 +120,7 @@ button {
     display: block;
     fill: #2e2f42;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
     .burger-button{
         display: none;
     }
@@ -129,7 +129,7 @@ button {
 }
 .heder-social {
     display: flex;
-    gap: 24px 0;
+    gap: 40px;
 }
 .heder-social a {
     color: #2e2f42;
@@ -137,7 +137,7 @@ button {
     font-size: 16px;
     line-height: 1.50;
     letter-spacing: 0.02em;
-    padding: 24px;
+    padding: 24px 0;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -404,7 +404,7 @@ a.link-studio {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-resolution: 2x) {
     .hero-title {
         max-width: 1157px;
         padding: 112px 0;
@@ -412,6 +412,10 @@ a.link-studio {
                     rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
                     url(../images/tab/img-hero-bg.jpg);
+                    background-image: linear-gradient(to bottom,
+                                rgba(46, 47, 66, 0.7),
+                                rgba(46, 47, 66, 0.7)),
+                            url(../images/tab/img-hero-bg@2x.jpg);
         }
     .hero-title-text {
         font-size: 56px;
@@ -419,17 +423,9 @@ a.link-studio {
         max-width: 496px;
         margin-bottom: 36px;
           }
-}
-@media (min-resolution: 2x) {
-    .hero-title {
-        max-width: 1157px;
-        background-image:linear-gradient(to bottom,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-                 url(../images/tab/img-hero-bg@2x.jpg);
+       
     }
-}
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1158px) and (min-resolution: 2x){
     .hero-title {
         max-width: 1440px;
         padding: 188px 0;
@@ -437,6 +433,10 @@ a.link-studio {
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
                 url(../images/desk/img-hero-bg.jpg);
+             background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/desk/img-hero-bg@2x.jpg);
         
     }
     .hero-title-text {
@@ -446,15 +446,6 @@ a.link-studio {
         .hero-title-button:focus {
             background-color: #404bbf;
         }
-}
-@media (min-resolution: 2x) {
-    .hero-title {
-        max-width: 1440px;
-        background-image: linear-gradient(to bottom,
-                rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-                url(../images/desk/img-hero-bg@2x.jpg);
-    }
 }
 /* Section 1 */
 .future {
@@ -933,7 +924,7 @@ padding: 98px 0;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-        gap: 24px;
+        gap: 72px 24px;
     }
     .footer-media-text {
              text-align: start;
@@ -949,7 +940,9 @@ padding: 98px 0;
     .footer-form-text {
     text-align: start;
     }
-
+.footer-form-input {
+    width: 264px;
+}
 }
 @media screen and (min-width: 1158px) {
     .footer-wrap {
